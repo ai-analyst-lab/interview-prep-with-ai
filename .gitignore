@@ -1,0 +1,18 @@
+# Your raw kickoff transcripts stay on your machine
+me/raw/*
+!me/raw/.gitkeep
+
+# Transcripts of your practice mocks
+debriefs/inbox/*
+!debriefs/inbox/.gitkeep
+
+# Practice database and Python environments
+*.duckdb
+*.duckdb.wal
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
