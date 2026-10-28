@@ -13,6 +13,13 @@ Every prompt from the interview prep prompt pack, one file each, for ChatGPT or 
 | [07-cold-retest.md](07-cold-retest.md) | Cold retest |
 | [08-take-home-review.md](08-take-home-review.md) | Take-home review |
 | [09-company-prep.md](09-company-prep.md) | Company prep |
+| [10-behavioral-story-extractor.md](10-behavioral-story-extractor.md) | Behavioral story extractor |
+| [11-conflict-story-extractor.md](11-conflict-story-extractor.md) | Conflict-story extractor |
+| [12-delivery-scorer.md](12-delivery-scorer.md) | Delivery scorer |
+| [13-answer-rewriter.md](13-answer-rewriter.md) | Answer rewriter |
+| [14-why-this-company.md](14-why-this-company.md) | "Why this company" builder |
+| [15-story-range-mapper.md](15-story-range-mapper.md) | Story-range mapper |
+| [16-practice-interviewer-twice.md](16-practice-interviewer-twice.md) | Practice interviewer that asks the follow-up twice |
 
 ## The loop
 1. **Kickoff once:** 01 or 02 builds your experience database.
@@ -21,6 +28,8 @@ Every prompt from the interview prep prompt pack, one file each, for ChatGPT or 
 4. **Cold retest every few days:** 07.
 
 Use 04 and 05 before your first recruiter screen, 08 before you submit a take-home, and 09 before each company's loop.
+
+**Behavioral (10 to 16).** Build behavioral stories with 10 (and 11 if you have no conflict story). Practice daily by answering out loud and pasting the transcript into 12. Before each company, run 14 and 15. Use 16 for a full behavioral round that asks the follow-up twice.
 
 ## One tip
 Paste your experience database (`me/experience-db.md`) and gaps list (`me/gaps.md`) at the start of every chat. Without them, the coach falls back to generic answers.

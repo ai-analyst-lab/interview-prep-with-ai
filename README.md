@@ -59,9 +59,15 @@ surfaces/        setup guides for each app
 debriefs/        debrief template, retest queue, inbox/ for practice mock transcripts
 practice/sql/    a synthetic practice database and 10 SQL drills with checked answers
 take-home/       playbook, decisions log, and risk list for take-home assignments
-examples/        Priya: a kickoff transcript, her experience database, a practice mock, its debrief
+examples/        Priya: a kickoff transcript, her experience database, a practice mock, its debrief, a 3-minute conflict answer to score
 .claude/         slash commands, an interviewer agent, and skills for Claude Code
 ```
+
+## New: the behavioral module
+- [rounds/4-behavioral.md](rounds/4-behavioral.md) has the question map: eight types of behavioral questions, how each is asked, and the most common failure for each. It also covers the three answer shapes and the 90-second rule.
+- `/mock behavioral` picks a question type you're thin on, asks it, and scores your delivery. It checks time to headline, numbers, I vs we, whether you named the conflict, example or principle, and whether the answer is yours or anyone's. It asks the follow-up twice, and rewrites your answer from your own facts when you type `rewrite`.
+- `/mock behavioral --type why --company <name>` practices "why this company": your own connection, one product observation, one story.
+- Prompts 10 to 16 in [prompts/](prompts/) are the same tools for ChatGPT or Claude.ai, with nothing to install.
 
 ## Privacy
 - Your raw kickoff transcripts go in `me/raw/`, and practice mock transcripts go in `debriefs/inbox/`. Both are gitignored, so they are never pushed.

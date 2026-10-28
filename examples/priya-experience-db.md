@@ -48,6 +48,9 @@ This is what the extraction prompt produces from `priya-kickoff-transcript.md`. 
 | `[NEED NUMBER]` | Revenue impact of the annual plan rollout |
 | `[NEED NUMBER]` | Orders lost during the iOS incident |
 
+## Product moments (for "why this company")
+- **Larder (a fictional grocery delivery app):** "I've ordered from Larder every Sunday night for about a year, and the repeat-last-basket button is why I haven't switched. Last month a substitution swapped my oat milk for dairy with no warning, and my first thought was: how many cancellations start with a bad substitution?" Ties to: story 1 (diagnosing a drop) and retention work.
+
 ## Coverage map
 | Round | Common question | Status |
 |---|---|---|

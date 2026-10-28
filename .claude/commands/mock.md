@@ -1,6 +1,6 @@
 ---
 description: Run a mock interview round in Practice (you answer) or Simulate (watch a model interview) mode
-argument-hint: "<screen|case|technical|behavioral> [--role ds|da|pm|finance|manager] [--mode practice|simulate]"
+argument-hint: "<screen|case|technical|behavioral> [--role ds|da|pm|finance|manager] [--mode practice|simulate] [--type 1-8|leading|why] [--company <name>]"
 ---
 
 Run a mock interview. Arguments: $ARGUMENTS
@@ -18,6 +18,14 @@ Follow the Practice mode in the core prompt exactly: one question, wait, one pus
 
 ## Simulate
 Follow the Simulate mode in the core prompt exactly: one exchange per turn (Interviewer, Candidate, Behind the answer), 5 to 7 lines, then `Type next to continue.` Build the candidate's answers from `me/experience-db.md`. Label anything else `(generic example)`.
+
+## Behavioral (Practice mode)
+For `behavioral`, use the `behavioral-scorer` skill instead of the standard scorecard:
+1. Pick a question type from the question map in `rounds/4-behavioral.md`. Prefer types with fewer than two stories in `me/story-matrix.md`, then Thin rows in the coverage map. Name the type in one line ("Type 3, conflict with a partner"), then ask one question in that type's wording, adjusted to the role. Wait.
+2. Run the scorer's Step 1 (delivery scorecard) on the answer.
+3. Run Step 2: the follow-up aimed at the weakest part. If the reply dodges, ask the harder version once more. Wait each time.
+4. Offer the rewrite (Step 3) when the candidate types `rewrite`.
+5. Add `--type <1-8|leading>` to pick a type. `--type why --company <name>` builds a "why this company" practice: ask for their product notes first, then score with the three-part check.
 
 ## After the session
 Offer to append weak topics to `debriefs/retest-queue.md` and new gaps to `me/gaps.md`. No em dashes.
